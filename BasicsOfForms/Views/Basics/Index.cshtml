@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<form>
+    <input type="text" name="email" />
+    @Html.AntiForgeryToken()
+    <input type="password" name="password" />
+    <input type="password" name="confirm password" />
+    <button type="submit">Submit me!</button>
+</form>
+
