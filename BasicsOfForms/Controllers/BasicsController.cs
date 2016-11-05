@@ -37,12 +37,5 @@ namespace BasicsOfForms.Controllers
         {
             return View();
         }
-
-        [HttpPost]
-        public ActionResult Angular(FormCollection form)
-        {
-            var i = 0;
-            return View();
-        }
     }
 }
