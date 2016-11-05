@@ -8,7 +8,7 @@
 
 @using(Html.BeginForm("Razor", "Basics", FormMethod.Post))
 
-<form method="post" action="/Basics/Razor">
+{
     @Html.AntiForgeryToken()
 
     @Html.Label("Email:")
@@ -18,5 +18,5 @@
     @Html.Label("Confirm password:")
     @Html.Password("passwordconfirm")
     <input type="submit" value="Submit me!" />
-</form>
+}
 
