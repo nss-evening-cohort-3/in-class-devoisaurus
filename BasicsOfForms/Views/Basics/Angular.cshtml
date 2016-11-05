@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Angular";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Angular</h2>
+
+@using (Html.BeginForm("Angular", "Basics", FormMethod.Post))
+
+{
+    @Html.AntiForgeryToken()
+
+    @Html.Label("Email:")
+    @Html.TextBox("email")
+    @Html.Label("Password:")
+    @Html.Password("password")
+    @Html.Label("Confirm password:")
+    @Html.Password("passwordconfirm")
+    <input type="submit" value="Submit me!" />
+}
+
